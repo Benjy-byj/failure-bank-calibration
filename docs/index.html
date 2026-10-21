@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wrongful Convictions in Shared Failure Banks</title>
+<meta name="description" content="Project page for two NeurIPS 2026 workshop papers by Yingjie Bai and Weiming Zhi on wrongful convictions in shared failure banks for autonomous research, with the video presentation, papers, and code.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wrongful Convictions in Shared Failure Banks for Autonomous Research">
+<meta property="og:description" content="NeurIPS 2026 workshops · Yingjie Bai and Weiming Zhi · video, papers, and code">
+<meta property="og:url" content="https://benjy-byj.github.io/failure-bank-calibration/">
+<meta property="og:image" content="https://benjy-byj.github.io/failure-bank-calibration/poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f5f6f8; --ink: #1b2230; --muted: #5a6474; --line: #e2e5ea;
+    --accent: #2458d6; --on-accent: #ffffff;
+    --dead: #b4423a; --evidence: #2458d6; --lock: #0b7a6e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1726; --surface: #16203280; --ink: #edeae3; --muted: #9aa8bd; --line: #27334b;
+      --accent: #5aa2ff; --on-accent: #0f1726;
+      --dead: #ee7b6f; --evidence: #5aa2ff; --lock: #2cc5b3;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 56px 16px 64px; }
+  a { color: var(--accent); }
+  header { text-align: center; }
+  .venue {
+    display: inline-block; font-size: 12.5px; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif; font-weight: 600;
+    font-size: clamp(29px, 5.2vw, 44px); line-height: 1.15; margin: 18px 0 8px; text-wrap: balance;
+  }
+  .venue .short { display: none; }
+  @media (max-width: 520px) { .venue .long { display: none; } .venue .short { display: inline; } }
+  .subtitle { font-size: clamp(18px, 2.7vw, 22px); color: var(--muted); margin: 0 0 22px; text-wrap: balance; }
+  .authors { font-size: 18px; margin: 0; }
+  .affil { color: var(--muted); font-size: 15px; margin: 2px 0 26px; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .buttons a {
+    display: inline-flex; align-items: center; gap: 8px; padding: 9px 18px; border-radius: 999px;
+    background: var(--ink); color: var(--bg); text-decoration: none; font-weight: 600; font-size: 15px;
+  }
+  .buttons a:hover, .buttons a:focus-visible { background: var(--accent); color: var(--on-accent); }
+  .buttons svg { width: 17px; height: 17px; fill: currentColor; flex: none; }
+  section { margin-top: 56px; }
+  h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 600; font-size: 26px; margin: 0 0 16px; }
+  video {
+    display: block; width: 100%; height: auto; aspect-ratio: 16 / 9;
+    border-radius: 10px; background: #0f1923;
+  }
+  .note { color: var(--muted); font-size: 14px; margin: 10px 0 0; text-align: center; }
+  .rule { display: grid; gap: 10px; }
+  .rule div {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6px 20px; align-items: center;
+    background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--c);
+    border-radius: 8px; padding: 12px 16px;
+  }
+  .rule span { color: var(--muted); }
+  .rule b { color: var(--c); font-weight: 650; }
+  @media (max-width: 560px) { .rule div { grid-template-columns: minmax(0, 1fr); } }
+  .abstract p { margin: 0 0 14px; }
+  figure { margin: 0; }
+  figure img { display: block; width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); background: #fff; }
+  figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; text-align: center; }
+  .papers { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+  .papers li { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; }
+  .papers .t { font-weight: 600; }
+  .papers .v { color: var(--muted); font-size: 15px; }
+  .bib { position: relative; }
+  pre {
+    margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
+    padding: 16px; overflow-x: auto; font: 13.5px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  .bib button {
+    position: absolute; top: 10px; right: 10px; font: 600 13px/1 inherit; font-family: inherit;
+    padding: 7px 12px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer;
+  }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="venue"><span class="long">NeurIPS 2026 Workshops</span><span class="short">NeurIPS 2026</span></span>
+    <h1>Wrongful Convictions in Shared Failure Banks for Autonomous Research</h1>
+    <p class="subtitle">Why an AI scientist's memory of failure should keep its evidence</p>
+    <p class="authors">Yingjie Bai &nbsp;·&nbsp; Weiming Zhi</p>
+    <p class="affil">School of Computer Science, The University of Sydney</p>
+    <nav class="buttons" aria-label="Links">
+      <a href="https://openreview.net/forum?id=ZSUCDw8SSy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6V2zm8 1.5V8h4.5L14 3.5zM8.5 12h9v1.6h-9V12zm0 3.4h9V17h-9v-1.6zm0 3.4h6v1.6h-6v-1.6z"/></svg>Paper (AI for Science)</a>
+      <a href="verify_agents.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6V2zm8 1.5V8h4.5L14 3.5zM8.5 12h9v1.6h-9V12zm0 3.4h9V17h-9v-1.6zm0 3.4h6v1.6h-6v-1.6z"/></svg>Paper (Verify Agents)</a>
+      <a href="https://github.com/Benjy-byj/failure-bank-calibration"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.6 7.4 3.9 12l4.7 4.6-1.2 1.2L1.6 12l5.8-5.8 1.2 1.2zm6.8 0 1.2-1.2 5.8 5.8-5.8 5.8-1.2-1.2L20.1 12l-4.7-4.6z"/></svg>Code</a>
+      <a href="#video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5L8 5.5z"/></svg>Video</a>
+      <a href="#bibtex"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4V3z"/></svg>BibTeX</a>
+    </nav>
+  </header>
+
+  <section id="video" aria-labelledby="video-h">
+    <h2 id="video-h">Video</h2>
+    <video controls playsinline preload="metadata" poster="poster.jpg">
+      <source src="talk.mp4" type="video/mp4">
+      <track kind="captions" src="talk.vtt" srclang="en" label="English">
+      <a href="talk.mp4">Download the video (MP4)</a>
+    </video>
+    <p class="note">4:08 · English captions (CC) · narrated by a synthetic voice (Kokoro-82M) · animation generated from code in the repository</p>
+  </section>
+
+  <section aria-labelledby="rule-h">
+    <h2 id="rule-h">The fix in one glance</h2>
+    <div class="rule">
+      <div style="--c: var(--dead)"><span>What shared failure banks store today</span><b>A bare DEAD flag from one noisy run, permanent and obeyed by agents</b></div>
+      <div style="--c: var(--evidence)"><span>What a failure record should store</span><b>Its evidence: number of runs, measured effect, and noise</b></div>
+      <div style="--c: var(--lock)"><span>When to lock an idea</span><b>Only when P(dead | evidence) passes a threshold; until then it stays open for retries</b></div>
+    </div>
+  </section>
+
+  <section class="abstract" aria-labelledby="abs-h">
+    <h2 id="abs-h">Abstract</h2>
+    <p>Autonomous research systems increasingly share <em>negative knowledge</em>: failed attempts are written to a common bank so that no agent repeats them. <strong>We show this design has a structural flaw.</strong> <em>The reason</em> is that a failure verdict is a statistical claim produced by a noisy, small-<i>n</i> experiment, and its two errors are asymmetric by construction: a false confirmation is built upon and exposes itself, while a false conviction is locked precisely so that nobody retries it.</p>
+    <p><em>The theory</em>: in a model of cumulative research where confirmed ideas beget new ideas, full deference to the bank is optimal when ideas arrive from outside, but when supply is success-gated, discovery is inverted-U in deference, and full sharing forfeits up to 81% of discoveries at long horizons.</p>
+    <p><em>The measurements</em> track the closed form: wrongful convictions run at 10–20% in two live training loops and 35–50% for verification-stage near misses, and on a 122,817-conviction public benchmark, near-marginal configurations are still convicted 44% of the time (theory: 45%). Agents obey the label: across twelve deployed LLMs from nine families, free-choice revisits of DEAD-marked ideas are 0/94, and the label alone suppresses selection of an a-priori-best idea in 9/9 families.</p>
+    <p><em>The fix</em> is not less sharing but calibrated conviction: each record carries its evidence, and an idea is locked only when that evidence passes a threshold, a schema change rather than an architecture change. In a controlled end-to-end loop with real training runs, evidence-graded memory delivers 30–32% more truth-validated discoveries than binary locks, no memory, or volume-matched parole (8 replicate loops).</p>
+    <p><em>The limits</em> are part of the claim: the advantage disappears in a low-noise cell, exactly where the phase structure predicts, and with LLM proposers in the loop the ordering depends on the proposer.</p>
+  </section>
+
+  <section aria-labelledby="fig-h">
+    <h2 id="fig-h">Overview</h2>
+    <figure>
+      <img src="overview.png" width="2600" height="1625" loading="lazy"
+           alt="Conceptual illustration: a marginal idea with a true positive effect gets one noisy negative result. Under binary failure memory it is marked DEAD, agents never retry it, and its descendants are never generated. Under calibrated negative memory the record keeps its evidence and stays OPEN, agents retest and pool evidence, and if confirmed the idea spawns new candidates; it is CLOSED only with strong negative evidence.">
+      <figcaption>Conceptual illustration: the same noisy verdict under binary and calibrated failure memory.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="papers-h">
+    <h2 id="papers-h">Papers</h2>
+    <ul class="papers">
+      <li><div class="t"><a href="https://openreview.net/forum?id=ZSUCDw8SSy">The Optimal Memory of Failure Is Lossy: Wrongful Convictions in Shared Failure Banks for Autonomous Research</a></div>
+        <div class="v">NeurIPS 2026 Workshop on AI for Science: Verification in the Age of AI Scientists</div></li>
+      <li><div class="t"><a href="verify_agents.pdf">The Memory of Failure Should Be Lossy: Wrongful Convictions in Shared Failure Banks for Autonomous Research</a></div>
+        <div class="v">NeurIPS 2026 Workshop: Who Verifies the Agents? Toward Reliable Agent Development</div></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="bib-h">
+    <h2 id="bib-h">Citation</h2>
+    <div class="bib">
+      <button type="button" id="copy">Copy</button>
+<pre id="bibtex">@inproceedings{bai2026optimal,
+  title     = {The Optimal Memory of Failure Is Lossy: Wrongful Convictions in Shared Failure Banks for Autonomous Research},
+  author    = {Bai, Yingjie and Zhi, Weiming},
+  booktitle = {NeurIPS 2026 Workshop on AI for Science: Verification in the Age of AI Scientists},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=ZSUCDw8SSy}
+}
+
+@inproceedings{bai2026memory,
+  title     = {The Memory of Failure Should Be Lossy: Wrongful Convictions in Shared Failure Banks for Autonomous Research},
+  author    = {Bai, Yingjie and Zhi, Weiming},
+  booktitle = {NeurIPS 2026 Workshop: Who Verifies the Agents? Toward Reliable Agent Development},
+  year      = {2026}
+}</pre>
+    </div>
+  </section>
+
+  <footer>Yingjie Bai and Weiming Zhi · School of Computer Science, The University of Sydney</footer>
+</main>
+<script>
+  document.getElementById("copy").addEventListener("click", async (e) => {
+    const btn = e.currentTarget;
+    try {
+      await navigator.clipboard.writeText(document.getElementById("bibtex").textContent);
+      btn.textContent = "Copied";
+    } catch {
+      btn.textContent = "Select to copy";
+    }
+    setTimeout(() => { btn.textContent = "Copy"; }, 1600);
+  });
+</script>
+</body>
+</html>

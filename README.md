@@ -2,9 +2,11 @@
 
 Code: Yingjie Bai. Papers: Yingjie Bai and Weiming Zhi, School of Computer Science, The University of Sydney.
 
+**Project page with the video:** https://benjy-byj.github.io/failure-bank-calibration/
+
 <p align="center">
-  <a href="media/overview.mp4"><img src="media/overview_teaser.gif" width="800" alt="Excerpt of the overview video: a slightly good idea is measured once, a third of the runs land below zero and the idea is marked DEAD; in a closed research loop, evidence-graded records find 30-32% more truth-validated discoveries"></a>
-  <br><sub><b><a href="media/overview.mp4">Watch the 4-minute narrated overview</a></b> (with sound; English subtitles in <a href="media/overview.srt">overview.srt</a>). The animation above is a silent excerpt.</sub>
+  <a href="https://benjy-byj.github.io/failure-bank-calibration/#video"><img src="media/overview_teaser.gif" width="800" alt="Excerpt of the overview video: a slightly good idea is measured once, a third of the runs land below zero and the idea is marked DEAD; in a closed research loop, evidence-graded records find 30-32% more truth-validated discoveries"></a>
+  <br><sub>Silent excerpt. <b><a href="https://benjy-byj.github.io/failure-bank-calibration/#video">Watch the 4-minute narrated video on the project page</a></b> (or download <a href="docs/talk.mp4">docs/talk.mp4</a>).</sub>
 </p>
 
 Autonomous research systems increasingly share *negative knowledge*: failed attempts go into a common
@@ -20,6 +22,7 @@ This repository holds the code, raw logs and cached runs behind two NeurIPS 2026
   [OpenReview](https://openreview.net/forum?id=ZSUCDw8SSy)
 - **The Memory of Failure Should Be Lossy: Wrongful Convictions in Shared Failure Banks for Autonomous Research.**
   NeurIPS 2026 Workshop: Who Verifies the Agents? Toward Reliable Agent Development.
+  [PDF](docs/verify_agents.pdf)
 
 Raw per-call model outputs, verdict logs and training-run caches are included, so every analysis
 reproduces without calling a model or retraining anything.
@@ -41,7 +44,8 @@ reproduces without calling a model or retraining anything.
 | Audit of a deployed bank | `audit/`, `insitu_fix/` | audit of the public Negative_Knowledge bank, a calibrated-status fix experiment, and a code-level survey of eight agent systems |
 | Proposed record format | `spec/FAILURE_RECORD_SPEC.md` | evidence-bearing failure record: fields and rules |
 | Figures | `figures/` | figure generators |
-| Overview video | `media/` | narrated animation of both papers, generated from code (Manim scenes, synthesized narration and music); see `media/README.md` |
+| Project page | `docs/` | GitHub Pages site with the video presentation (`talk.mp4`, captions in `talk.vtt`) |
+| Video sources | `media/` | the video is generated from code (Manim scenes, synthesized narration and music); see `media/README.md` |
 
 Preregistrations sit next to the experiments they cover (`PREREG_*.md`). They are shipped as frozen
 before data collection; results and deviations were appended afterwards and are marked as such.

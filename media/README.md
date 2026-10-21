@@ -1,8 +1,9 @@
 # Overview video
 
-`overview.mp4` is a 4-minute narrated explainer of both workshop papers (1080p60, English
-narration with a soft music bed, English subtitles as a selectable track and in `overview.srt`).
-`overview_teaser.gif` is a silent excerpt for the repository front page.
+The 4-minute narrated explainer of both workshop papers (1080p60, English narration with a soft
+music bed, English subtitles as a selectable track) is published as `docs/talk.mp4` on the
+[project page](https://benjy-byj.github.io/failure-bank-calibration/); its subtitles are in
+`overview.srt` here and `docs/talk.vtt`. `overview_teaser.gif` is a silent excerpt for the repository front page.
 
 Every number shown or spoken comes from the papers or from this repository; the per-loop
 discoveries in the closed-loop scene are read from `sysloop/results/` (`replicates.json`).
@@ -29,7 +30,7 @@ python3 narration.py                                  # -> audio/*.wav, timeline
 for s in S1Title S2Bank S3Noise S4Asym S5Measured S6LLM S7Fix S8Result S9End; do
   manim -qh --disable_caching -o $s explainer.py $s
 done
-python3 assemble.py overview.mp4
+python3 assemble.py overview.mp4                    # then copy to ../docs/talk.mp4
 ```
 
 The music and sound effects are synthesized in `assemble.py`; no third-party audio is used.
