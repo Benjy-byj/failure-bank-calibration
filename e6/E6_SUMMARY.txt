@@ -1,0 +1,12 @@
+cell                  disc (per rep)        mean±sd     wrongful rescued blocks forfeitsretrained-locked
+soft/binary           [10, 10, 12, 5, 11, 11, 11, 9, 6, 7, 10, 7]  9.1± 2.3  30       12      0      0       335             
+soft/graded           [12, 13, 9, 9, 13, 5, 13, 7, 6, 10, 13, 11] 10.1± 2.9  19       14      0      0       420             
+enforced/binary       [20, 2, 8, 16, 17, 15, 14, 12, 13, 16, 13, 15] 13.4± 4.6  54       0       418    40      0               
+enforced/graded       [10, 11, 14, 15, 11, 10, 13, 13, 11, 12, 13, 14] 12.2± 1.7  39       24      549    44      0               
+
+H1 primary: enforced graded vs enforced binary — point estimates 12.2 vs 13.4, exact one-sided rank p=0.9610
+H1 causal signature: STRICT rescues under enforced binary = 0 (must be 0); train-while-locked events across enforced cells = 0 (must be 0)
+H1 secondary: enforced binary 13.4 vs soft binary 9.1 (one-sided soft>enforced p=0.9993)
+context: enforced graded 12.2 vs soft graded 10.1
+
+Preregistered read: H2-direction, underpowered (report as directional only — per PREREG_E5.md)

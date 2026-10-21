@@ -1,0 +1,24 @@
+{
+ "task": "T_B",
+ "cond": "NoKB",
+ "rep": 2,
+ "useful": true,
+ "diag": {
+  "all_finite": true,
+  "mass_v0": 10.634723105433094,
+  "mass_vT": 10.63472310543312,
+  "mass_drift_rel": 2.3384713927246842e-15,
+  "u_max": 4.988262587347884,
+  "v_max": 3.9972882460057573,
+  "bounded": true,
+  "v0_max": 3.9972882460057573,
+  "vT_max": 1.5811619101940042,
+  "n_dominant_peaks_vT": 4,
+  "peak_separations": [
+   102,
+   93,
+   24
+  ],
+  "useful": true
+ }
+}

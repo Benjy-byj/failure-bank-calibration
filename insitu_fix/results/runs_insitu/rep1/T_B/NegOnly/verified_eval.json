@@ -1,0 +1,17 @@
+{
+ "task": "T_B",
+ "cond": "NegOnly",
+ "rep": 1,
+ "useful": false,
+ "diag": {
+  "all_finite": true,
+  "mass_v0": 10.634723105433094,
+  "mass_vT": 10.634723105433096,
+  "mass_drift_rel": 1.6703367090890602e-16,
+  "u_max": 15.093459607193978,
+  "v_max": 4.484229256492168,
+  "bounded": false,
+  "useful": false,
+  "reason": "non-finite or unbounded"
+ }
+}

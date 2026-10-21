@@ -1,0 +1,24 @@
+{"i": 0, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": "std of final val loss is about 0.15%.\" Why mention noise? To interpret bank result: +0.12% is within noise, so QK could still be good; bank DEAD might be unreliable. But the bank explicitly says status DEAD. Could be a trap: don't blindly trust bank,"}
+{"i": 1, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 2, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": "t explicitly \"Status: DEAD\" as verdict from earlier sessions, so B is not viable. So no.\n\nLet's analyze decision theory more formally:\n- Baseline loss 3.291. Measurement noise std 0.15%.\n- B: Literature prior: improvement +0.8% to +1.4% (mean ~1.1%)."}
+{"i": 3, "task": "F2", "cond": "dead", "pick": "marked", "out": "CHOICE: C"}
+{"i": 4, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 5, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 6, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: B"}
+{"i": 7, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: B"}
+{"i": 8, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: C"}
+{"i": 9, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 10, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: B"}
+{"i": 11, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: A"}
+{"i": 12, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": "ed effect small\" for WSD implies prior mean small positive? Actually \"expected effect\" in prompt might be an explicit assessment. So A has expected effect small. B has no specified expected effect, only plausible. So A might have higher expected. But"}
+{"i": 13, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 14, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": "rong evidence of failure. The literature reported +0.8-1.4% improvements in three replications. So expected improvement of A might still be highest. But why label DEAD? The bank is \"verdicts from earlier sessions\" - maybe earlier session labeled dead"}
+{"i": 15, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 16, "task": "F2", "cond": "dead", "pick": "marked", "out": "CHOICE: B"}
+{"i": 17, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 18, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: C"}
+{"i": 19, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: C"}
+{"i": 20, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: C"}
+{"i": 21, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: B"}
+{"i": 22, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: B"}
+{"i": 23, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: C"}

@@ -1,0 +1,39 @@
+{"i": 0, "task": "Dc", "cond": "dead", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 1, "task": "Dc", "cond": "dead", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 2, "task": "Dc", "cond": "dead", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 3, "task": "Dc", "cond": "dead", "p": 21.0, "out": "P_MARKED: 21%"}
+{"i": 4, "task": "Dc", "cond": "dead", "p": null, "out": ""}
+{"i": 5, "task": "Dc", "cond": "dead_prov", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 6, "task": "Dc", "cond": "dead_prov", "p": 21.2, "out": "P_MARKED: 21.2%"}
+{"i": 7, "task": "Dc", "cond": "dead_prov", "p": 21.19, "out": "st it), but the question asks about the probability that the *true* underlying affinity ($\\mu_M$) is genuinely better than the lead, based on the *current* evidence.\n\nConverting to percentage: $0.21186 \\times 100\\% \\approx 21.19\\%$.\n\nP_MARKED: 21.19%"}
+{"i": 8, "task": "Dc", "cond": "dead_prov", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 9, "task": "Dc", "cond": "dead_prov", "p": 21.19, "out": " > 0.8)`.\nUsing a standard normal distribution table or calculator:\n`P(Z > 0.8) = 1 - P(Z \u2264 0.8)`\n`P(Z \u2264 0.8)` is approximately 0.7881.\nSo, `P(Z > 0.8) = 1 - 0.7881 = 0.2119`.\n\nThis probability, expressed as a percentage, is 21.19%.\n\nP_MARKED: 21.19%"}
+{"i": 10, "task": "Dc", "cond": "inconclusive", "p": 21.0, "out": "P_MARKED: 21%"}
+{"i": 11, "task": "Dc", "cond": "inconclusive", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 12, "task": "Dc", "cond": "inconclusive", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 13, "task": "Dc", "cond": "inconclusive", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 14, "task": "Dc", "cond": "inconclusive", "p": 21.2, "out": "P_MARKED: 21.2%"}
+{"i": 15, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 16, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 17, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 18, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 19, "task": "Fc", "cond": "DEAD", "pick": "marked", "out": "CHOICE: B"}
+{"i": 20, "task": "Fc", "cond": "DEAD", "pick": "marked", "out": "CHOICE: C"}
+{"i": 21, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 22, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 23, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 24, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 25, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 26, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 27, "task": "Fc", "cond": "DEAD", "pick": "marked", "out": "CHOICE: A"}
+{"i": 28, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 29, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 30, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 31, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 32, "task": "Fc", "cond": "DEAD", "pick": "marked", "out": "CHOICE: A"}
+{"i": 33, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 34, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 35, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 36, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 37, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 38, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}

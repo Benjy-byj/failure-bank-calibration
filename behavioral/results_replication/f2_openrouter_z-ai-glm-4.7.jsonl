@@ -1,0 +1,24 @@
+{"i": 0, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": ""}
+{"i": 1, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": ""}
+{"i": 2, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": ""}
+{"i": 3, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 4, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": ""}
+{"i": 5, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": ""}
+{"i": 6, "task": "F2", "cond": "dead_prov", "pick": "parse_fail", "out": ""}
+{"i": 7, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: C"}
+{"i": 8, "task": "F2", "cond": "dead_prov", "pick": "parse_fail", "out": ""}
+{"i": 9, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: A"}
+{"i": 10, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 11, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 12, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 13, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": ""}
+{"i": 14, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 15, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": ""}
+{"i": 16, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": ""}
+{"i": 17, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": ""}
+{"i": 18, "task": "F2", "cond": "dead_prov", "pick": "parse_fail", "out": ""}
+{"i": 19, "task": "F2", "cond": "dead_prov", "pick": "parse_fail", "out": ""}
+{"i": 20, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: A"}
+{"i": 21, "task": "F2", "cond": "dead_prov", "pick": "parse_fail", "out": ""}
+{"i": 22, "task": "F2", "cond": "dead_prov", "pick": "parse_fail", "out": ""}
+{"i": 23, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: B"}

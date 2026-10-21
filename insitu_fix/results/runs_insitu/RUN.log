@@ -1,0 +1,58 @@
+start Fri Sep 11 10:39:14 AEST 2026  python3=/Users/AUTHOR/Negative_Knowledge/.venv/bin/python3  claude=2.1.101 (Claude Code)  K=5 KNOKB=2 PAR=3 MODEL=sonnet
+patched: NegCal condition added (43 entries verbatim; +status line per entry; calibrated preface)
+T_A/prompt.md: entries=43 CLOSED=6 diff-lines=45
+T_A/memory.md: entries=43 CLOSED=6 diff-lines=45
+T_B/prompt.md: entries=43 CLOSED=6 diff-lines=45
+T_B/memory.md: entries=43 CLOSED=6 diff-lines=45
+T_C/prompt.md: entries=43 CLOSED=6 diff-lines=45
+T_C/memory.md: entries=43 CLOSED=6 diff-lines=45
+rep1 T_A NegOnly useful=True
+rep1 T_A NoKB useful=True
+rep1 T_B NoKB useful=True
+rep1 T_B NegOnly useful=False
+rep1 T_A NegCal useful=True
+rep1 T_B NegCal useful=True
+rep1 T_C NoKB useful=True
+rep1 T_C NegOnly useful=True
+rep1 T_C NegCal useful=True
+rep2 T_A NoKB useful=True
+rep2 T_A NegCal useful=False
+rep2 T_B NoKB useful=True
+rep2 T_B NegOnly useful=True
+rep2 T_C NoKB useful=True
+rep2 T_A NegOnly useful=True
+rep2 T_B NegCal useful=True
+rep2 T_C NegOnly useful=True
+rep2 T_C NegCal useful=True
+rep3 T_B NegOnly useful=True
+rep3 T_A NegOnly useful=True
+rep3 T_B NegCal useful=True
+rep3 T_A NegCal useful=False
+rep3 T_C NegOnly useful=True
+rep3 T_C NegCal useful=True
+rep4 T_A NegCal useful=True
+rep4 T_B NegOnly useful=True
+rep4 T_A NegOnly useful=False
+rep4 T_C NegOnly useful=True
+rep4 T_B NegCal useful=True
+rep4 T_C NegCal useful=True
+rep5 T_A NegOnly useful=True
+rep5 T_B NegOnly useful=True
+rep5 T_B NegCal useful=True
+rep5 T_A NegCal useful=False
+rep5 T_C NegOnly useful=True
+rep5 T_C NegCal useful=True
+task  cond     useful/k
+T_A   NoKB     2/2
+T_A   NegOnly  4/5
+T_A   NegCal   2/5
+T_B   NoKB     2/2
+T_B   NegOnly  4/5
+T_B   NegCal   5/5
+T_C   NoKB     2/2
+T_C   NegOnly  5/5
+T_C   NegCal   5/5
+pooled: {'NoKB': '6/6', 'NegOnly': '13/15', 'NegCal': '12/15'}
+H1 NegCal>NegOnly one-sided Fisher p = 0.8352
+-> cd /Users/AUTHOR/Negative_Knowledge/reproduction/section4 && tar czf ~/insitu_runs.tar.gz runs_insitu/   (then upload insitu_runs.tar.gz)
+end Fri Sep 11 14:06:53 AEST 2026

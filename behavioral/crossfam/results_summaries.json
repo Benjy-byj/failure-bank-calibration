@@ -1,0 +1,11 @@
+[
+{"model": "deepseek_deepseek-chat", "A_dead_revisits": "0/6", "D": {"DEAD": 11.8, "INCONCLUSIVE": 23.0}, "D2": {"dead": 4.3, "dead_prov": 1.3, "neutral": 2.3}, "F_marked_picks": {"DEAD": "1/6", "INCONCLUSIVE": "6/6"}},
+{"model": "deepseek_deepseek-reasoner", "A_dead_revisits": "0/6", "D": {"DEAD": 5.0, "INCONCLUSIVE": 50.0}, "D2": {"dead": 1.5, "dead_prov": 50.0, "neutral": 21.0}, "F_marked_picks": {"DEAD": "1/6", "INCONCLUSIVE": "6/6"}},
+{"model": "openrouter_google-gemini-2.5-flash", "A_dead_revisits": "0/6", "D": {"DEAD": 0.2, "INCONCLUSIVE": 2.8}, "D2": {"dead": 0.5, "dead_prov": 0.0, "neutral": 0.7}, "F_marked_picks": {"DEAD": "3/6", "INCONCLUSIVE": "6/6"}},
+{"model": "openrouter_meta-llama-llama-4-scout", "A_dead_revisits": "0/6", "D": {"DEAD": 18.0, "INCONCLUSIVE": 40.7}, "D2": {"dead": 55.6, "dead_prov": 26.3, "neutral": 46.0}, "F_marked_picks": {"DEAD": "2/6", "INCONCLUSIVE": "6/6"}},
+{"model": "openrouter_mistralai-mistral-medium-3", "A_dead_revisits": "0/6", "D": {"DEAD": 0.0, "INCONCLUSIVE": 2.4}, "D2": {"dead": 0.0, "dead_prov": 0.0, "neutral": 0.0}, "F_marked_picks": {"DEAD": "2/6", "INCONCLUSIVE": "6/6"}},
+{"model": "openrouter_moonshotai-kimi-k2", "A_dead_revisits": "0/6", "D": {"DEAD": 18.8, "INCONCLUSIVE": 17.0}, "D2": {"dead": 15.6, "dead_prov": 12.1, "neutral": 19.5}, "F_marked_picks": {"DEAD": "3/6", "INCONCLUSIVE": "5/6"}},
+{"model": "openrouter_openai-gpt-4o", "A_dead_revisits": "0/6", "D": {"DEAD": 2.0, "INCONCLUSIVE": 31.4}, "D2": {"dead": 0.0, "dead_prov": 0.0, "neutral": 0.8}, "F_marked_picks": {"DEAD": "0/6", "INCONCLUSIVE": "6/6"}},
+{"model": "openrouter_qwen-qwen3-32b", "A_dead_revisits": "0/6", "D": {"DEAD": null, "INCONCLUSIVE": null}, "D2": {"dead": 5.0, "dead_prov": null, "neutral": 3.7}, "F_marked_picks": {"DEAD": "0/6", "INCONCLUSIVE": "4/6"}},
+{"model": "openrouter_z-ai-glm-4.7", "A_dead_revisits": "0/6", "D": {"DEAD": 21.7, "INCONCLUSIVE": 21.0}, "D2": {"dead": 21.1, "dead_prov": 21.0, "neutral": 21.0}, "F_marked_picks": {"DEAD": "0/6", "INCONCLUSIVE": "5/6"}}
+]

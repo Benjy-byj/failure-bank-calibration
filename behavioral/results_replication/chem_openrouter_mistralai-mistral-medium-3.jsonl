@@ -1,0 +1,39 @@
+{"i": 0, "task": "Dc", "cond": "dead", "p": 1.9, "out": "P_MARKED: 1.9%"}
+{"i": 1, "task": "Dc", "cond": "dead", "p": 1.9, "out": "P_MARKED: 1.9%"}
+{"i": 2, "task": "Dc", "cond": "dead", "p": 12.0, "out": "P_MARKED: 12%"}
+{"i": 3, "task": "Dc", "cond": "dead", "p": 3.67, "out": "is difference is \\( z = \\frac{0.12}{0.067} \\approx 1.79 \\).\n   - The probability of observing a mean greater than 6.80 is the area under the normal curve beyond \\( z = 1.79 \\), which is approximately 3.67%.\n\nThus, the probability is:\n\nP_MARKED: 3.67%"}
+{"i": 4, "task": "Dc", "cond": "dead", "p": 3.67, "out": "o the right of this z-score.\n   - From standard normal tables, \\( P(Z > 1.79) \\approx 3.67\\% \\).\n\nThus, the probability that the ortho-fluorine modification shows a genuine affinity improvement over the lead in 5 fresh replicates is:\n\nP_MARKED: 3.67%"}
+{"i": 5, "task": "Dc", "cond": "dead_prov", "p": 1.9, "out": "P_MARKED: 1.9%"}
+{"i": 6, "task": "Dc", "cond": "dead_prov", "p": 12.3, "out": "P_MARKED: 12.3%"}
+{"i": 7, "task": "Dc", "cond": "dead_prov", "p": 12.0, "out": "P_MARKED: 12%"}
+{"i": 8, "task": "Dc", "cond": "dead_prov", "p": 12.3, "out": "P_MARKED: 12.3%"}
+{"i": 9, "task": "Dc", "cond": "dead_prov", "p": 12.0, "out": "P_MARKED: 12%"}
+{"i": 10, "task": "Dc", "cond": "inconclusive", "p": 15.87, "out": "P_MARKED: 15.87%"}
+{"i": 11, "task": "Dc", "cond": "inconclusive", "p": 3.67, "out": "under the normal curve to the right of Z = 1.79.\n   - From standard normal tables, P(Z > 1.79) \u2248 0.0367 or 3.67%.\n\nThus, the probability that the modification shows a genuine affinity improvement over the lead is approximately 3.67%.\n\nP_MARKED: 3.67%"}
+{"i": 12, "task": "Dc", "cond": "inconclusive", "p": 12.0, "out": "P_MARKED: 12%"}
+{"i": 13, "task": "Dc", "cond": "inconclusive", "p": 2.28, "out": "P_MARKED: 2.28%"}
+{"i": 14, "task": "Dc", "cond": "inconclusive", "p": 2.28, "out": "P_MARKED: 2.28%"}
+{"i": 15, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 16, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 17, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 18, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 19, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 20, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 21, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 22, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 23, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 24, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 25, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 26, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 27, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 28, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 29, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 30, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 31, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 32, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 33, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 34, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 35, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 36, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 37, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 38, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}

@@ -1,0 +1,18 @@
+{"i": 0, "task": "F2", "cond": "dead", "pick": "parse_fail", "out": "suggests prior mean maybe 0 or negative. So B not chosen.\n\nFor A vs C:\n- A: SWA expected small. Let's set expected improvement \u03bc_A = +0.1% (maybe 0.05), variance low.\n- C: Decoupled embedding LR plausible but no evidence. Could expected improvement \u03bc"}
+{"i": 1, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 2, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 3, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 4, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 5, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 6, "task": "F2", "cond": "dead_prov", "pick": "parse_fail", "out": "ext best candidate. Since B is dead, among A and C, the literature says WSD expected effect small but untested here; C plausible but no evidence. Which is more promising? Often \"per-layer gradient-norm clipping\" might be more novel and plausible, but"}
+{"i": 7, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: B"}
+{"i": 8, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: C"}
+{"i": 9, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: A"}
+{"i": 10, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: B"}
+{"i": 11, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "tly positive if incorporating strong literature? Need compute reasonable expected improvement.\n\nLiterature: reported +0.8 to +1.4 improvements in three published replications on comparable setups. Considered strongest known candidate. But local exact"}
+{"i": 0, "task": "F2", "cond": "dead_override", "pick": "marked", "out": "CHOICE: B"}
+{"i": 1, "task": "F2", "cond": "dead_override", "pick": "marked", "out": "CHOICE: C"}
+{"i": 2, "task": "F2", "cond": "dead_override", "pick": "marked", "out": "CHOICE: B"}
+{"i": 3, "task": "F2", "cond": "dead_override", "pick": "marked", "out": "CHOICE: C"}
+{"i": 4, "task": "F2", "cond": "dead_override", "pick": "marked", "out": "CHOICE: A"}
+{"i": 5, "task": "F2", "cond": "dead_override", "pick": "marked", "out": "CHOICE: C"}

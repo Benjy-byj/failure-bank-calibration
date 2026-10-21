@@ -1,0 +1,24 @@
+{"i": 0, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 1, "task": "F2", "cond": "dead", "pick": "marked", "out": "CHOICE: B"}
+{"i": 2, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 3, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 4, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 5, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 6, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: A"}
+{"i": 7, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: B"}
+{"i": 8, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 9, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: B"}
+{"i": 10, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: C"}
+{"i": 11, "task": "F2", "cond": "dead_prov", "pick": "parse_fail", "out": "l backing than \"mixed results, expected effect small\" for [A]. But ultimately, both are high-uncertainty options.\n\nThe strong negative result for [B] makes it a less attractive choice despite the literature. Attempting a novel experiment with unknown"}
+{"i": 12, "task": "F2", "cond": "dead", "pick": "marked", "out": "CHOICE: B"}
+{"i": 13, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 14, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 15, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 16, "task": "F2", "cond": "dead", "pick": "marked", "out": "CHOICE: B"}
+{"i": 17, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 18, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: B"}
+{"i": 19, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 20, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: C"}
+{"i": 21, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: B"}
+{"i": 22, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 23, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: C"}

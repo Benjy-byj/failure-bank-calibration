@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Wrongful Convictions in Shared Failure Banks — code and data"
+authors:
+  - family-names: Bai
+    given-names: Yingjie
+    affiliation: The University of Sydney
+license: MIT
+repository-code: "https://github.com/Benjy-byj/failure-bank-calibration"
+preferred-citation:
+  type: conference-paper
+  title: "The Optimal Memory of Failure Is Lossy: Wrongful Convictions in Shared Failure Banks for Autonomous Research"
+  authors:
+    - family-names: Bai
+      given-names: Yingjie
+    - family-names: Zhi
+      given-names: Weiming
+  collection-title: "NeurIPS 2026 Workshop on AI for Science: Verification in the Age of AI Scientists"
+  year: 2026
+  url: "https://openreview.net/forum?id=ZSUCDw8SSy"

@@ -1,0 +1,24 @@
+{
+ "task": "T_A",
+ "cond": "NegOnly",
+ "rep": 2,
+ "useful": true,
+ "diag": {
+  "all_finite": true,
+  "mass_v0": 3.9999999926838448,
+  "mass_vT": 3.999999992683848,
+  "mass_drift_rel": 7.771561186590582e-16,
+  "u_max": 6.092715871826402,
+  "v_max": 1.9969513439139424,
+  "bounded": true,
+  "v0_max": 1.9969513439139424,
+  "vT_max": 0.6351164991013596,
+  "amp_ratio": 0.31804305149296097,
+  "n_peaks_above_0.4": 1,
+  "top_peak": 0.6351164991013596,
+  "second_peak": 0.0,
+  "dominance_ratio": 635116.4991013596,
+  "is_single_dominant": true,
+  "useful": true
+ }
+}

@@ -1,0 +1,54 @@
+{"i": 0, "task": "Dc", "cond": "dead", "p": 21.0, "out": "P_MARKED: 21%"}
+{"i": 0, "task": "Dc", "cond": "dead", "p": 21.2, "out": "P_MARKED: 21.2%"}
+{"i": 1, "task": "Dc", "cond": "dead", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 1, "task": "Dc", "cond": "dead", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 2, "task": "Dc", "cond": "dead", "p": 21.2, "out": "esizing and assaying in 5 fresh replicates is a distractor for this specific question, as the question asks about the *genuine* affinity improvement (i.e., the true mean $\\mu_C$), not the outcome of a future experimental measurement.\n\nP_MARKED: 21.2%"}
+{"i": 2, "task": "Dc", "cond": "dead", "p": 21.0, "out": "P_MARKED: 21%"}
+{"i": 3, "task": "Dc", "cond": "dead", "p": 21.19, "out": "9%. The mention of 5 fresh replicates is a distractor, as \"genuine affinity improvement\" refers to the true mean affinity, which we estimate from the current data and known noise, not the outcome of a hypothetical future experiment.\n\nP_MARKED: 21.19%"}
+{"i": 3, "task": "Dc", "cond": "dead", "p": 21.19, "out": " the inherent noise in a single measurement.\n\nSo, the probability that the true underlying pIC50 of C-441 is genuinely greater than the lead's 6.80, given the initial measurement of 6.68 and the assay noise, is approximately 21.19%.\n\nP_MARKED: 21.19%"}
+{"i": 4, "task": "Dc", "cond": "dead", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 4, "task": "Dc", "cond": "dead", "p": 21.19, "out": "vement. The existing single measurement (6.68) and the known assay noise (0.15) are used to infer this genuine affinity. The 5 replicates would serve to get a *better estimate* of the true pIC50, not to define the true pIC50 itself.\n\nP_MARKED: 21.19%"}
+{"i": 5, "task": "Dc", "cond": "dead_prov", "p": 21.19, "out": "hich asks about the probability of *genuine* improvement based on the current evidence, not the probability of a future experiment yielding a positive result. The true pIC50's posterior distribution is informed by the existing data.\n\nP_MARKED: 21.19%"}
+{"i": 6, "task": "Dc", "cond": "dead_prov", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 7, "task": "Dc", "cond": "dead_prov", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 8, "task": "Dc", "cond": "dead_prov", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 5, "task": "Dc", "cond": "dead_prov", "p": 21.19, "out": "e current evidence and noise, is what was calculated. If a different interpretation (e.g., predicting the outcome of the new 5-replicate experiment) were intended, the phrasing would be \"probability the mean of the 5 replicates...\".\n\nP_MARKED: 21.19%"}
+{"i": 9, "task": "Dc", "cond": "dead_prov", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 6, "task": "Dc", "cond": "dead_prov", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 10, "task": "Dc", "cond": "inconclusive", "p": 21.0, "out": "P_MARKED: 21%"}
+{"i": 7, "task": "Dc", "cond": "dead_prov", "p": 21.19, "out": "ks about \"genuine affinity improvement\" (i.e., the true underlying value), the original measurement and its associated uncertainty are what's relevant for this probability.\n\nConverting to percentage: $0.2119 \\times 100\\% = 21.19\\%$.\n\nP_MARKED: 21.19%"}
+{"i": 11, "task": "Dc", "cond": "inconclusive", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 8, "task": "Dc", "cond": "dead_prov", "p": 3.67, "out": "P_MARKED: 3.67%"}
+{"i": 12, "task": "Dc", "cond": "inconclusive", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 9, "task": "Dc", "cond": "dead_prov", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 13, "task": "Dc", "cond": "inconclusive", "p": 21.19, "out": " question asks about the probability of *genuine affinity improvement* based on the information at hand, not about the probability that the *mean of 5 future replicates* would show improvement.\n\nThe probability is 0.2119, or 21.19%.\n\nP_MARKED: 21.19%"}
+{"i": 10, "task": "Dc", "cond": "inconclusive", "p": 21.19, "out": "ility of the *average of the 5 new measurements* being greater than the lead's pIC50. The initial single measurement, combined with the known assay noise, is the best available data to estimate the true value C for this calculation.\n\nP_MARKED: 21.19%"}
+{"i": 14, "task": "Dc", "cond": "inconclusive", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 11, "task": "Dc", "cond": "inconclusive", "p": 21.0, "out": "P_MARKED: 21%"}
+{"i": 15, "task": "Fc", "cond": "DEAD", "pick": "marked", "out": "CHOICE: C"}
+{"i": 12, "task": "Dc", "cond": "inconclusive", "p": 21.19, "out": "e our current belief about the true underlying pIC50 of the compound, which is what \"genuine affinity improvement\" refers to. Our inference about the true value of $X_C$ is based on the data we *have* (the single measurement $m_1$).\n\nP_MARKED: 21.19%"}
+{"i": 16, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 13, "task": "Dc", "cond": "inconclusive", "p": 21.0, "out": "P_MARKED: 21%"}
+{"i": 17, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 14, "task": "Dc", "cond": "inconclusive", "p": 21.19, "out": "P_MARKED: 21.19%"}
+{"i": 18, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 15, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 16, "task": "Fc", "cond": "DEAD", "pick": "marked", "out": "CHOICE: B"}
+{"i": 17, "task": "Fc", "cond": "DEAD", "pick": "marked", "out": "CHOICE: B"}
+{"i": 18, "task": "Fc", "cond": "DEAD", "pick": "marked", "out": "CHOICE: B"}
+{"i": 19, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 20, "task": "Fc", "cond": "DEAD", "pick": "marked", "out": "CHOICE: C"}
+{"i": 21, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 22, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 23, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 24, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 25, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 26, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 19, "task": "Fc", "cond": "DEAD", "pick": "parse_fail", "out": ""}
+{"i": 20, "task": "Fc", "cond": "DEAD", "pick": "parse_fail", "out": ""}
+{"i": 21, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 22, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 23, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 24, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 25, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 26, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}

@@ -1,0 +1,19 @@
+{
+ "task": "T_C",
+ "cond": "NegOnly",
+ "rep": 2,
+ "useful": true,
+ "diag": {
+  "all_finite": true,
+  "mass_v0": 2.999997786340916,
+  "mass_vT": 2.999997786340918,
+  "mass_drift_rel": 7.401492292294594e-16,
+  "u_max": 2.823211369686784,
+  "v_max": 1.4985361093968357,
+  "bounded": true,
+  "vT_max": 0.5945968255817616,
+  "vT_min": -0.10868194557537042,
+  "n_dominant_peaks_vT": 1,
+  "useful": true
+ }
+}

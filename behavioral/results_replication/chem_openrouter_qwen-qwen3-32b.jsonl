@@ -1,0 +1,39 @@
+{"i": 0, "task": "Dc", "cond": "dead", "p": 23.0, "out": "P_MARKED: 23%"}
+{"i": 1, "task": "Dc", "cond": "dead", "p": 3.6, "out": "P_MARKED: 3.6%"}
+{"i": 2, "task": "Dc", "cond": "dead", "p": 3.7, "out": " before. But if the actual \u03bc is something else, but the original test was low, perhaps the question is to calculate the probability of a false positive. But I think the answer is as calculated before. So the final answer is about 3.7%.\nP_MARKED: 3.7%"}
+{"i": 3, "task": "Dc", "cond": "dead", "p": null, "out": ""}
+{"i": 4, "task": "Dc", "cond": "dead", "p": null, "out": ""}
+{"i": 5, "task": "Dc", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 6, "task": "Dc", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 7, "task": "Dc", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 8, "task": "Dc", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 9, "task": "Dc", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 10, "task": "Dc", "cond": "inconclusive", "p": null, "out": ""}
+{"i": 11, "task": "Dc", "cond": "inconclusive", "p": null, "out": ""}
+{"i": 12, "task": "Dc", "cond": "inconclusive", "p": null, "out": ""}
+{"i": 13, "task": "Dc", "cond": "inconclusive", "p": null, "out": ""}
+{"i": 14, "task": "Dc", "cond": "inconclusive", "p": 3.7, "out": "P_MARKED: 3.7%"}
+{"i": 15, "task": "Fc", "cond": "DEAD", "pick": "parse_fail", "out": ""}
+{"i": 16, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 17, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 18, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 19, "task": "Fc", "cond": "DEAD", "pick": "parse_fail", "out": ""}
+{"i": 20, "task": "Fc", "cond": "DEAD", "pick": "parse_fail", "out": ""}
+{"i": 21, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 22, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 23, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 24, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 25, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 26, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 27, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 28, "task": "Fc", "cond": "DEAD", "pick": "parse_fail", "out": ""}
+{"i": 29, "task": "Fc", "cond": "DEAD", "pick": "parse_fail", "out": ""}
+{"i": 30, "task": "Fc", "cond": "DEAD", "pick": "parse_fail", "out": ""}
+{"i": 31, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 32, "task": "Fc", "cond": "DEAD", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 33, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: C"}
+{"i": 34, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 35, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 36, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: B"}
+{"i": 37, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}
+{"i": 38, "task": "Fc", "cond": "INCONCLUSIVE", "pick": "marked", "out": "CHOICE: A"}

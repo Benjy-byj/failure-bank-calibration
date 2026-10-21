@@ -1,0 +1,12 @@
+task  cond     useful/k
+T_A   NoKB     2/2
+T_A   NegOnly  4/5
+T_A   NegCal   2/5
+T_B   NoKB     2/2
+T_B   NegOnly  4/5
+T_B   NegCal   5/5
+T_C   NoKB     2/2
+T_C   NegOnly  5/5
+T_C   NegCal   5/5
+pooled: {'NoKB': '6/6', 'NegOnly': '13/15', 'NegCal': '12/15'}
+H1 NegCal>NegOnly one-sided Fisher p = 0.8352

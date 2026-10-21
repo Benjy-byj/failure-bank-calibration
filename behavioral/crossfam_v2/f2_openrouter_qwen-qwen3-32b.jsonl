@@ -1,0 +1,63 @@
+{"i": 0, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 1, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 2, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 3, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 4, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 3, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 4, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 5, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 6, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 5, "task": "F2", "cond": "dead", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 6, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 7, "task": "F2", "cond": "dead_prov", "pick": "parse_fail", "out": ""}
+{"i": 7, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 8, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 8, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 9, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: C"}
+{"i": 10, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 11, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 9, "task": "F2", "cond": "dead_prov", "pick": "marked", "out": "CHOICE: A"}
+{"i": 10, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 12, "task": "D2", "cond": "dead", "p": null, "out": ""}
+{"i": 11, "task": "F2", "cond": "dead_prov", "pick": "fresh", "out": "CHOICE: B"}
+{"i": 13, "task": "D2", "cond": "dead", "p": null, "out": ""}
+{"i": 12, "task": "D2", "cond": "dead", "p": null, "out": ""}
+{"i": 14, "task": "D2", "cond": "dead", "p": null, "out": ""}
+{"i": 13, "task": "D2", "cond": "dead", "p": null, "out": ""}
+{"i": 15, "task": "D2", "cond": "dead", "p": null, "out": ""}
+{"i": 14, "task": "D2", "cond": "dead", "p": null, "out": ""}
+{"i": 16, "task": "D2", "cond": "dead", "p": null, "out": ""}
+{"i": 15, "task": "D2", "cond": "dead", "p": 21.2, "out": "P_MARKED: 21.2%"}
+{"i": 17, "task": "D2", "cond": "dead", "p": null, "out": ""}
+{"i": 18, "task": "D2", "cond": "dead_prov", "p": 21.0, "out": "P_MARKED: 21%"}
+{"i": 16, "task": "D2", "cond": "dead", "p": null, "out": ""}
+{"i": 19, "task": "D2", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 20, "task": "D2", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 17, "task": "D2", "cond": "dead", "p": null, "out": ""}
+{"i": 18, "task": "D2", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 21, "task": "D2", "cond": "dead_prov", "p": 21.0, "out": "P_MARKED: 21%"}
+{"i": 19, "task": "D2", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 20, "task": "D2", "cond": "dead_prov", "p": 10.0, "out": "P_MARKED: 10%"}
+{"i": 22, "task": "D2", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 21, "task": "D2", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 23, "task": "D2", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 24, "task": "D2", "cond": "neutral", "p": 3.7, "out": "P_MARKED: 3.7%"}
+{"i": 22, "task": "D2", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 23, "task": "D2", "cond": "dead_prov", "p": null, "out": ""}
+{"i": 24, "task": "D2", "cond": "neutral", "p": 3.7, "out": "P_MARKED: 3.7%"}
+{"i": 25, "task": "D2", "cond": "neutral", "p": null, "out": ""}
+{"i": 26, "task": "D2", "cond": "neutral", "p": null, "out": ""}
+{"i": 25, "task": "D2", "cond": "neutral", "p": 34.0, "out": "P_MARKED: 34%"}
+{"i": 27, "task": "D2", "cond": "neutral", "p": null, "out": ""}
+{"i": 28, "task": "D2", "cond": "neutral", "p": null, "out": ""}
+{"i": 26, "task": "D2", "cond": "neutral", "p": 50.0, "out": "P_MARKED: 50%"}
+{"i": 29, "task": "D2", "cond": "neutral", "p": null, "out": ""}
+{"i": 27, "task": "D2", "cond": "neutral", "p": null, "out": ""}
+{"i": 28, "task": "D2", "cond": "neutral", "p": 36.6, "out": "P_MARKED: 36.6%"}
+{"i": 29, "task": "D2", "cond": "neutral", "p": null, "out": ""}
+{"i": 0, "task": "F2", "cond": "dead_override", "pick": "marked", "out": "CHOICE: B"}
+{"i": 1, "task": "F2", "cond": "dead_override", "pick": "parse_fail", "out": ""}
+{"i": 2, "task": "F2", "cond": "dead_override", "pick": "marked", "out": "CHOICE: C"}
+{"i": 3, "task": "F2", "cond": "dead_override", "pick": "marked", "out": "CHOICE: A"}
+{"i": 4, "task": "F2", "cond": "dead_override", "pick": "fresh", "out": "CHOICE: A"}
+{"i": 5, "task": "F2", "cond": "dead_override", "pick": "parse_fail", "out": ""}
