@@ -1,0 +1,245 @@
+{
+ "title": {
+  "beats": [
+   {
+    "text": "Wrongful convictions in shared failure banks.",
+    "wav": "audio/title_0_47906772f5.wav",
+    "start": 0.6,
+    "dur": 2.466
+   },
+   {
+    "text": "Why the memory of failure in automated science should keep its evidence.",
+    "wav": "audio/title_1_a77e50b754.wav",
+    "start": 3.817,
+    "dur": 4.03
+   }
+  ],
+  "total": 9.646
+ },
+ "bank": {
+  "beats": [
+   {
+    "text": "Autonomous research agents increasingly share a failure bank.",
+    "wav": "audio/bank_0_d0c37a3c62.wav",
+    "start": 0.6,
+    "dur": 3.692
+   },
+   {
+    "text": "Every failed experiment is written down once, so no agent wastes budget repeating it.",
+    "wav": "audio/bank_1_670862982d.wav",
+    "start": 5.142,
+    "dur": 5.07
+   },
+   {
+    "text": "That sounds sensible. But each failure verdict is a statistical claim, usually made from one small, noisy experiment.",
+    "wav": "audio/bank_2_03ce0c89c2.wav",
+    "start": 11.262,
+    "dur": 7.424
+   }
+  ],
+  "total": 20.186
+ },
+ "noise": {
+  "beats": [
+   {
+    "text": "Take an idea that is genuinely good, but only slightly.",
+    "wav": "audio/noise_0_592f01335d.wav",
+    "start": 0.6,
+    "dur": 3.37
+   },
+   {
+    "text": "Measure it once, and the result scatters around its small true effect.",
+    "wav": "audio/noise_1_de70b6cfa1.wav",
+    "start": 4.72,
+    "dur": 3.783
+   },
+   {
+    "text": "About a third of the time, the measurement lands below zero. The idea fails, and the bank marks it dead.",
+    "wav": "audio/noise_2_1a1dffce79.wav",
+    "start": 10.553,
+    "dur": 6.165
+   },
+   {
+    "text": "Marginally good ideas are exactly the ones a single noisy test is most likely to convict.",
+    "wav": "audio/noise_3_6dc7711760.wav",
+    "start": 17.769,
+    "dur": 6.046
+   }
+  ],
+  "total": 25.314
+ },
+ "asym": {
+  "beats": [
+   {
+    "text": "And the two possible errors are not symmetric.",
+    "wav": "audio/asym_0_78786101ad.wav",
+    "start": 0.6,
+    "dur": 2.557
+   },
+   {
+    "text": "A bad idea that is wrongly kept gets built on. Its descendants keep failing, and the mistake exposes itself.",
+    "wav": "audio/asym_1_bd410c02a2.wav",
+    "start": 3.807,
+    "dur": 6.911
+   },
+   {
+    "text": "A good idea that is wrongly killed is never tried again. When new ideas grow from confirmed ones, none of its descendants are ever generated.",
+    "wav": "audio/asym_2_914fc0ddb6.wav",
+    "start": 11.668,
+    "dur": 8.875
+   },
+   {
+    "text": "False positives expose themselves. False negatives never do.",
+    "wav": "audio/asym_3_2a6b9cc31a.wav",
+    "start": 21.593,
+    "dur": 3.929
+   }
+  ],
+  "total": 27.022
+ },
+ "measured": {
+  "beats": [
+   {
+    "text": "How often does this happen in practice?",
+    "wav": "audio/measured_0_f3d194ccf6.wav",
+    "start": 0.6,
+    "dur": 2.003
+   },
+   {
+    "text": "In a live training loop for a small character-level GPT, seventeen and a half percent of convictions were wrongful, close to the nineteen percent our theory predicts.",
+    "wav": "audio/measured_1_743d9c1154.wav",
+    "start": 3.253,
+    "dur": 9.957
+   },
+   {
+    "text": "Among near-miss ideas, ones that passed once and then failed verification, between a third and a half of the verdicts were wrong.",
+    "wav": "audio/measured_2_9c68a68df9.wav",
+    "start": 14.061,
+    "dur": 7.528
+   },
+   {
+    "text": "And replaying a hundred and twenty-two thousand convictions on the public F C Net benchmark shows the same shape: the errors concentrate on small, genuine improvements.",
+    "wav": "audio/measured_3_86f64be17e.wav",
+    "start": 22.439,
+    "dur": 10.619
+   }
+  ],
+  "total": 34.558
+ },
+ "llm": {
+  "beats": [
+   {
+    "text": "Do language-model agents look past the label?",
+    "wav": "audio/llm_0_2f24d039b0.wav",
+    "start": 0.6,
+    "dur": 2.677
+   },
+   {
+    "text": "We showed models the same one-run record, labeled either dead, or inconclusive.",
+    "wav": "audio/llm_1_aae2dd2306.wav",
+    "start": 3.927,
+    "dur": 4.963
+   },
+   {
+    "text": "Labeled inconclusive, three Claude models put the chance the idea is genuinely better at thirty-two and a half percent. Labeled dead: eight and a half.",
+    "wav": "audio/llm_2_08ca5807b1.wav",
+    "start": 9.64,
+    "dur": 9.28
+   },
+   {
+    "text": "Across twelve models from nine families, agents choosing their next experiment revisited none of ninety-four dead-marked ideas. And every family picked the best available idea less often once it carried the label.",
+    "wav": "audio/llm_3_36f51f4b33.wav",
+    "start": 19.87,
+    "dur": 13.909
+   },
+   {
+    "text": "The models can price the evidence. The label overrides it.",
+    "wav": "audio/llm_4_e6be7ed1a9.wav",
+    "start": 34.629,
+    "dur": 3.543
+   }
+  ],
+  "total": 39.672
+ },
+ "fix": {
+  "beats": [
+   {
+    "text": "The fix is a change of schema. It needs no new model.",
+    "wav": "audio/fix_0_cb8e335b64.wav",
+    "start": 0.6,
+    "dur": 3.23
+   },
+   {
+    "text": "Instead of a bare dead flag, each record carries its evidence: the number of runs, the measured effect, and the noise.",
+    "wav": "audio/fix_1_db39cc08b8.wav",
+    "start": 4.48,
+    "dur": 7.086
+   },
+   {
+    "text": "From that, the bank computes the probability that the idea is truly dead. One run, slightly worse: zero point seven nine. That is below the threshold, so the idea stays open, and a retry is allowed.",
+    "wav": "audio/fix_2_797079be6e.wav",
+    "start": 12.316,
+    "dur": 13.346
+   },
+   {
+    "text": "Five runs, averaging the same deficit: zero point nine six. Now the lock is earned.",
+    "wav": "audio/fix_3_c72d1d151c.wav",
+    "start": 26.612,
+    "dur": 5.765
+   },
+   {
+    "text": "It is a standard confidence rule. Shared failure banks just don't implement it.",
+    "wav": "audio/fix_4_dfeb4ef3b9.wav",
+    "start": 33.326,
+    "dur": 4.349
+   }
+  ],
+  "total": 39.175
+ },
+ "result": {
+  "beats": [
+   {
+    "text": "Does it matter end to end? We ran a closed research loop with real training runs: eight independent loops for each memory rule.",
+    "wav": "audio/result_0_a24837a749.wav",
+    "start": 0.6,
+    "dur": 7.69
+   },
+   {
+    "text": "With no memory, with binary locks, or with a parole rule, each loop found about forty-six truth-validated discoveries.",
+    "wav": "audio/result_1_905b3b764f.wav",
+    "start": 9.04,
+    "dur": 7.442
+   },
+   {
+    "text": "With evidence-graded records: sixty point five. That is thirty to thirty-two percent more; a difference of thirteen point nine, with a ninety-five percent interval from nine point seven to eighteen point one.",
+    "wav": "audio/result_2_839f1ac777.wav",
+    "start": 17.331,
+    "dur": 13.226
+   },
+   {
+    "text": "It does not hold everywhere. In a low-noise, short-horizon loop, binary locking edges ahead, and with language-model proposers, the ordering depends on the proposer.",
+    "wav": "audio/result_3_d19d2ad437.wav",
+    "start": 31.508,
+    "dur": 10.431
+   }
+  ],
+  "total": 43.538
+ },
+ "end": {
+  "beats": [
+   {
+    "text": "Records that carry their evidence. Locks that require it.",
+    "wav": "audio/end_0_e5cca0f8d1.wav",
+    "start": 0.6,
+    "dur": 3.396
+   },
+   {
+    "text": "The code, logs, and cached runs are on GitHub.",
+    "wav": "audio/end_1_97c46d5b05.wav",
+    "start": 4.946,
+    "dur": 2.886
+   }
+  ],
+  "total": 9.432
+ }
+}
