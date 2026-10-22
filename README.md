@@ -44,7 +44,7 @@ reproduces without calling a model or retraining anything.
 | Audit of a deployed bank | `audit/`, `insitu_fix/` | audit of the public Negative_Knowledge bank, a calibrated-status fix experiment, and a code-level survey of eight agent systems |
 | Proposed record format | `spec/FAILURE_RECORD_SPEC.md` | evidence-bearing failure record: fields and rules |
 | Figures | `figures/` | figure generators |
-| Project page | `docs/` | GitHub Pages site with the video presentation (`talk.mp4`, captions in `talk.vtt`) |
+| Project page | `docs/` | GitHub Pages site with the video presentation (`talk.mp4`, subtitles burned in) |
 | Video sources | `media/` | the video is generated from code (Manim scenes, synthesized narration and music); see `media/README.md` |
 
 Preregistrations sit next to the experiments they cover (`PREREG_*.md`). They are shipped as frozen

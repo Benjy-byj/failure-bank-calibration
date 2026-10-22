@@ -1,9 +1,9 @@
 # Overview video
 
 The 4-minute narrated explainer of both workshop papers (1080p60, English narration with a soft
-music bed, English subtitles as a selectable track) is published as `docs/talk.mp4` on the
-[project page](https://benjy-byj.github.io/failure-bank-calibration/); its subtitles are in
-`overview.srt` here and `docs/talk.vtt`. `overview_teaser.gif` is a silent excerpt for the repository front page.
+music bed, English subtitles burned into the picture) is published as `docs/talk.mp4` on the
+[project page](https://benjy-byj.github.io/failure-bank-calibration/); the subtitle text is also in
+`overview.srt` here. `overview_teaser.gif` is a silent excerpt for the repository front page.
 
 Every number shown or spoken comes from the papers or from this repository; the per-loop
 discoveries in the closed-loop scene are read from `sysloop/results/` (`replicates.json`).
@@ -16,7 +16,7 @@ The video is generated from code:
 |---|---|
 | `narration.py` | narration script; synthesizes each sentence with Kokoro (voice `af_heart`) and writes `timeline.json` |
 | `explainer.py` | the nine animated scenes (Manim Community); every animation is timed to its sentence in `timeline.json` |
-| `assemble.py` | joins the scenes, generates the music bed and sound effects, ducks the music under the voice, normalizes to -16 LUFS, writes subtitles, muxes the MP4 |
+| `assemble.py` | joins the scenes, burns in the subtitles, generates the music bed and sound effects, ducks the music under the voice, normalizes to -16 LUFS, muxes the MP4 |
 
 Run these from inside `media/`:
 

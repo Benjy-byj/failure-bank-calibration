@@ -1,6 +1,7 @@
 """Assemble the overview video: concatenate rendered scenes, build the soundtrack
 (narration + generated music bed with ducking + a few sound effects), loudness-normalize,
 write subtitles, and mux everything into one MP4.
+Subtitles are burned into the picture (the animation is scaled to 90% to leave a band for them).
 Usage: python3 assemble.py OUT.mp4 [--quality 1080p60] [--no-music]"""
 import json, re, subprocess, sys
 from pathlib import Path
@@ -115,21 +116,78 @@ def fmt_ts(x):
     return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
 
 
-def cues_for(text, start, dur, max_chars=90):
-    sents = re.split(r"(?<=[.?!:;])\s+", text.strip())
+def split_chunks(text, max_chars=74):
+    """Split narration into one-line subtitle chunks: sentences first, long sentences at a comma or space near the middle."""
+    def split_long(t):
+        if len(t) <= max_chars:
+            return [t]
+        mid = len(t) / 2
+        cands = [m.end() for m in re.finditer(r"[,;:]\s", t)] or [m.end() for m in re.finditer(r"\s", t)]
+        cut = min(cands, key=lambda c: abs(c - mid))
+        return split_long(t[:cut].strip()) + split_long(t[cut:].strip())
+    pieces = []
+    for s_ in re.split(r"(?<=[.?!])\s+", text.strip()):
+        pieces += split_long(s_)
     chunks, cur = [], ""
-    for s_ in sents:
-        if cur and len(cur) + len(s_) + 1 > max_chars:
-            chunks.append(cur); cur = s_
+    for p_ in pieces:                                   # merge short neighbours back into one line
+        if cur and len(cur) + 1 + len(p_) <= max_chars:
+            cur = cur + " " + p_
         else:
-            cur = (cur + " " + s_).strip()
+            if cur: chunks.append(cur)
+            cur = p_
     chunks.append(cur)
+    return chunks
+
+
+def cues_for(text, wav, start, dur):
+    """Time each chunk by its share of characters, then snap boundaries to the nearest pause in the narration audio."""
+    chunks = split_chunks(text)
+    s, sr = sf.read(wav)
+    if s.ndim > 1: s = s.mean(1)
+    hop = int(0.01 * sr)
+    e = np.array([np.sqrt(np.mean(s[i:i + hop] ** 2)) for i in range(0, len(s) - hop, hop)])
+    quiet = e < 0.012
+    pauses, i = [], 0
+    while i < len(quiet):                                   # pauses of at least 120 ms -> their midpoints (s)
+        if quiet[i]:
+            j = i
+            while j < len(quiet) and quiet[j]: j += 1
+            if j - i >= 12: pauses.append((i + j) / 2 * 0.01)
+            i = j
+        else:
+            i += 1
     tot = sum(len(c) for c in chunks)
-    out, t = [], start
-    for c in chunks:
-        d = dur * len(c) / tot
-        out.append((t, t + d, c)); t += d
-    return out
+    bounds, acc = [0.0], 0
+    for c in chunks[:-1]:
+        acc += len(c)
+        est = dur * acc / tot
+        near = [p for p in pauses if abs(p - est) < 0.9 and p > bounds[-1] + 0.4]
+        bounds.append(min(near, key=lambda p: abs(p - est)) if near else est)
+    bounds.append(dur)
+    return [(start + bounds[k], start + bounds[k + 1], c) for k, c in enumerate(chunks)]
+
+
+def ass_ts(x):
+    cs = int(round(x * 100)); h, cs = divmod(cs, 360000); m, cs = divmod(cs, 6000); s_, cs = divmod(cs, 100)
+    return f"{h}:{m:02d}:{s_:02d}.{cs:02d}"
+
+
+def write_ass(cues, path):
+    head = """[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Inter,42,&H00F2ECE6,&H000000FF,&H0023190F,&H0023190F,0,0,0,0,100,100,0,0,1,2,0,2,110,110,26,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+    path.write_text(head + "".join(f"Dialogue: 0,{ass_ts(a)},{ass_ts(b)},Default,,0,0,0,,{c}\n" for a, b, c in cues))
 
 
 def display_text(s):
@@ -158,12 +216,26 @@ def main():
     total = float(sum(durs))
     print("scenes:", " ".join(f"{d:.2f}" for d in durs), "total", round(total, 2))
 
-    # video: concatenate and re-encode once with colour tags
+    cues = []
+    for key, off in zip(KEYS, offs):
+        for b in tl[key]["beats"]:
+            cues += cues_for(display_text(b["text"]), HERE / b["wav"], off + b["start"], b["dur"])
+    ass = work / "subs.ass"
+    write_ass(cues, ass)
+
+    # video: concatenate, shrink the animation to 90% to open a subtitle band at the bottom,
+    # burn in the subtitles, and re-encode once with colour tags
     lst = work / "concat.txt"
     lst.write_text("".join(f"file '{v}'\n" for v in vids))
     vid = work / "video.mp4"
+    probe = work / "bg.png"
+    run(["ffmpeg", "-v", "error", "-y", "-i", str(vids[0]), "-frames:v", "1", "-vf", "format=rgb24", str(probe)])
+    from PIL import Image
+    bg = "0x%02X%02X%02X" % Image.open(probe).convert("RGB").getpixel((4, 4))
+    vf = (f"format=rgb24,scale=1728:972:flags=lanczos,pad=1920:1080:96:8:color={bg},"
+          f"ass={ass},scale=out_color_matrix=bt709:out_range=tv,format=yuv420p")
     run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst),
-         "-vf", "scale=out_color_matrix=bt709:out_range=tv,format=yuv420p",
+         "-vf", vf,
          "-c:v", "libx264", "-preset", "slow", "-crf", "18", "-tune", "animation",
          "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv", "-an", str(vid)])
 
@@ -171,7 +243,6 @@ def main():
     rng = np.random.default_rng(11)
     n = int(np.ceil(total * SR)) + SR
     voice = np.zeros(n); mask = np.zeros(n)
-    cues = []
     for key, off in zip(KEYS, offs):
         for b in tl[key]["beats"]:
             s, sr = sf.read(HERE / b["wav"])
@@ -180,7 +251,6 @@ def main():
             a = int((off + b["start"]) * SR)
             voice[a:a + len(s)] += s
             mask[a:a + len(s)] = 1
-            cues += cues_for(display_text(b["text"]), off + b["start"], b["dur"])
     fx = np.zeros(n)
     for key, off in zip(KEYS, offs):
         p = HERE / f"sfx_{key}.json"
@@ -215,9 +285,9 @@ def main():
 
     srt = out.with_suffix(".srt")
     srt.write_text("".join(f"{i + 1}\n{fmt_ts(a)} --> {fmt_ts(b)}\n{c}\n\n" for i, (a, b, c) in enumerate(cues)))
-    run(["ffmpeg", "-v", "error", "-y", "-i", str(vid), "-i", str(aud), "-i", str(srt),
-         "-map", "0:v", "-map", "1:a", "-map", "2:s", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-c:s", "mov_text",
-         "-metadata:s:s:0", "language=eng", "-metadata:s:a:0", "language=eng", "-movflags", "+faststart", str(out)])
+    run(["ffmpeg", "-v", "error", "-y", "-i", str(vid), "-i", str(aud),
+         "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+         "-metadata:s:a:0", "language=eng", "-movflags", "+faststart", str(out)])
     print("wrote", out, round(duration(out), 2), "s;", srt)
 
 

@@ -11,174 +11,234 @@ Why the memory of failure in automated science should keep its evidence.
 Autonomous research agents increasingly share a failure bank.
 
 4
-00:00:14,775 --> 00:00:19,845
-Every failed experiment is written down once, so no agent wastes budget repeating it.
+00:00:14,775 --> 00:00:17,260
+Every failed experiment is written down once,
 
 5
-00:00:20,895 --> 00:00:22,239
-That sounds sensible.
+00:00:17,260 --> 00:00:19,845
+so no agent wastes budget repeating it.
 
 6
-00:00:22,239 --> 00:00:28,319
-But each failure verdict is a statistical claim, usually made from one small, noisy experiment.
+00:00:20,895 --> 00:00:25,140
+That sounds sensible. But each failure verdict is a statistical claim,
 
 7
+00:00:25,140 --> 00:00:28,319
+usually made from one small, noisy experiment.
+
+8
 00:00:30,417 --> 00:00:33,787
 Take an idea that is genuinely good, but only slightly.
 
-8
+9
 00:00:34,537 --> 00:00:38,320
 Measure it once, and the result scatters around its small true effect.
 
-9
-00:00:40,370 --> 00:00:43,961
+10
+00:00:40,370 --> 00:00:43,540
 About a third of the time, the measurement lands below zero.
 
-10
-00:00:43,961 --> 00:00:46,535
+11
+00:00:43,540 --> 00:00:46,535
 The idea fails, and the bank marks it dead.
 
-11
-00:00:47,586 --> 00:00:53,632
-Marginally good ideas are exactly the ones a single noisy test is most likely to convict.
-
 12
+00:00:47,586 --> 00:00:50,609
+Marginally good ideas are exactly the ones a
+
+13
+00:00:50,609 --> 00:00:53,632
+single noisy test is most likely to convict.
+
+14
 00:00:55,717 --> 00:00:58,274
 And the two possible errors are not symmetric.
 
-13
-00:00:58,924 --> 00:01:01,895
+15
+00:00:58,924 --> 00:01:01,959
 A bad idea that is wrongly kept gets built on.
 
-14
-00:01:01,895 --> 00:01:05,835
+16
+00:01:01,959 --> 00:01:05,835
 Its descendants keep failing, and the mistake exposes itself.
 
-15
-00:01:06,785 --> 00:01:10,335
+17
+00:01:06,785 --> 00:01:10,380
 A good idea that is wrongly killed is never tried again.
 
-16
-00:01:10,335 --> 00:01:15,660
-When new ideas grow from confirmed ones, none of its descendants are ever generated.
+18
+00:01:10,380 --> 00:01:13,125
+When new ideas grow from confirmed ones,
 
-17
+19
+00:01:13,125 --> 00:01:15,660
+none of its descendants are ever generated.
+
+20
 00:01:16,710 --> 00:01:20,639
 False positives expose themselves. False negatives never do.
 
-18
+21
 00:01:22,733 --> 00:01:24,736
 How often does this happen in practice?
 
-19
-00:01:25,386 --> 00:01:35,343
-In a live training loop for a small character-level GPT, 17.5% of convictions were wrongful, close to the 19% our theory predicts.
-
-20
-00:01:36,194 --> 00:01:43,722
-Among near-miss ideas, ones that passed once and then failed verification, between a third and a half of the verdicts were wrong.
-
-21
-00:01:44,572 --> 00:01:51,066
-And replaying 122,817 convictions on the public FCNet benchmark shows the same shape:
-
 22
-00:01:51,066 --> 00:01:55,191
-the errors concentrate on small, genuine improvements.
+00:01:25,386 --> 00:01:29,231
+In a live training loop for a small character-level GPT,
 
 23
+00:01:29,231 --> 00:01:35,343
+17.5% of convictions were wrongful, close to the 19% our theory predicts.
+
+24
+00:01:36,194 --> 00:01:41,079
+Among near-miss ideas, ones that passed once and then failed verification,
+
+25
+00:01:41,079 --> 00:01:43,722
+between a third and a half of the verdicts were wrong.
+
+26
+00:01:44,572 --> 00:01:47,727
+And replaying 122,817 convictions on the
+
+27
+00:01:47,727 --> 00:01:51,472
+public FCNet benchmark shows the same shape:
+
+28
+00:01:51,472 --> 00:01:55,191
+the errors concentrate on small, genuine improvements.
+
+29
 00:01:57,283 --> 00:01:59,960
 Do language-model agents look past the label?
 
-24
-00:02:00,610 --> 00:02:05,573
-We showed models the same one-run record, labeled either dead, or inconclusive.
+30
+00:02:00,610 --> 00:02:02,955
+We showed models the same one-run record,
 
-25
-00:02:06,323 --> 00:02:14,057
-Labeled inconclusive, three Claude models put the chance the idea is genuinely better at 32.5%.
+31
+00:02:02,955 --> 00:02:05,573
+labeled either dead, or inconclusive.
 
-26
-00:02:14,057 --> 00:02:15,603
+32
+00:02:06,323 --> 00:02:07,758
+Labeled inconclusive,
+
+33
+00:02:07,758 --> 00:02:14,543
+three Claude models put the chance the idea is genuinely better at 32.5%.
+
+34
+00:02:14,543 --> 00:02:15,603
 Labeled dead: 8.5%.
 
-27
-00:02:16,553 --> 00:02:24,430
-Across 12 models from 9 families, agents choosing their next experiment revisited none of 94 dead-marked ideas.
+35
+00:02:16,553 --> 00:02:21,488
+Across 12 models from 9 families, agents choosing their next experiment
 
-28
-00:02:24,430 --> 00:02:30,462
-And every family picked the best available idea less often once it carried the label.
+36
+00:02:21,488 --> 00:02:25,003
+revisited none of 94 dead-marked ideas.
 
-29
+37
+00:02:25,003 --> 00:02:28,318
+And every family picked the best available
+
+38
+00:02:28,318 --> 00:02:30,462
+idea less often once it carried the label.
+
+39
 00:02:31,312 --> 00:02:34,855
 The models can price the evidence. The label overrides it.
 
-30
+40
 00:02:36,950 --> 00:02:40,180
 The fix is a change of schema. It needs no new model.
 
-31
-00:02:40,830 --> 00:02:44,585
+41
+00:02:40,830 --> 00:02:44,785
 Instead of a bare dead flag, each record carries its evidence:
 
-32
-00:02:44,585 --> 00:02:47,916
+42
+00:02:44,785 --> 00:02:47,916
 the number of runs, the measured effect, and the noise.
 
-33
-00:02:48,666 --> 00:02:54,109
+43
+00:02:48,666 --> 00:02:53,951
 From that, the bank computes the probability that the idea is truly dead.
 
-34
-00:02:54,109 --> 00:02:56,346
-One run, slightly worse: 0.79.
+44
+00:02:53,951 --> 00:02:58,706
+One run, slightly worse: 0.79. That is below the threshold,
 
-35
-00:02:56,346 --> 00:03:02,012
-That is below the threshold, so the idea stays open, and a retry is allowed.
+45
+00:02:58,706 --> 00:03:02,012
+so the idea stays open, and a retry is allowed.
 
-36
+46
 00:03:02,962 --> 00:03:08,727
 Five runs, averaging the same deficit: 0.96. Now the lock is earned.
 
-37
-00:03:09,676 --> 00:03:14,025
-It is a standard confidence rule. Shared failure banks just don't implement it.
+47
+00:03:09,676 --> 00:03:11,551
+It is a standard confidence rule.
 
-38
-00:03:16,117 --> 00:03:21,222
-Does it matter end to end? We ran a closed research loop with real training runs:
+48
+00:03:11,551 --> 00:03:14,025
+Shared failure banks just don't implement it.
 
-39
-00:03:21,222 --> 00:03:23,807
+49
+00:03:16,117 --> 00:03:17,632
+Does it matter end to end?
+
+50
+00:03:17,632 --> 00:03:21,112
+We ran a closed research loop with real training runs:
+
+51
+00:03:21,112 --> 00:03:23,807
 8 independent loops for each memory rule.
 
-40
-00:03:24,557 --> 00:03:31,999
-With no memory, with binary locks, or with a parole rule, each loop found about 46 truth-validated discoveries.
+52
+00:03:24,557 --> 00:03:28,322
+With no memory, with binary locks, or with a parole rule,
 
-41
-00:03:32,848 --> 00:03:39,288
-With evidence-graded records: 60.5. That is 30–32% more;
+53
+00:03:28,322 --> 00:03:31,999
+each loop found about 46 truth-validated discoveries.
 
-42
-00:03:39,288 --> 00:03:46,074
-a difference of 13.9, with a 95% interval from 9.7 to 18.1.
+54
+00:03:32,848 --> 00:03:36,213
+With evidence-graded records: 60.5.
 
-43
-00:03:47,025 --> 00:03:48,806
+55
+00:03:36,213 --> 00:03:41,133
+That is 30–32% more; a difference of 13.9,
+
+56
+00:03:41,133 --> 00:03:46,074
+with a 95% interval from 9.7 to 18.1.
+
+57
+00:03:47,025 --> 00:03:48,750
 It does not hold everywhere.
 
-44
-00:03:48,806 --> 00:03:57,456
-In a low-noise, short-horizon loop, binary locking edges ahead, and with language-model proposers, the ordering depends on the proposer.
+58
+00:03:48,750 --> 00:03:53,350
+In a low-noise, short-horizon loop, binary locking edges ahead,
 
-45
+59
+00:03:53,350 --> 00:03:57,456
+and with language-model proposers, the ordering depends on the proposer.
+
+60
 00:03:59,650 --> 00:04:03,046
 Records that carry their evidence. Locks that require it.
 
-46
+61
 00:04:03,996 --> 00:04:06,882
 The code, logs, and cached runs are on GitHub.
 
